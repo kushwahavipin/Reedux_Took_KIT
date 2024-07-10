@@ -77,12 +77,13 @@ function Shoes({ shoe }) {
 
   return (
     <div className="shoes bg-white shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-      <h2 className="text-xl font-semibold text-gray-800 p-4">{shoe.name}</h2>
+      
       <img
-        className="w-full h-64 object-cover"
+        className="w-full h-54 object-cover"
         src={shoe.image}
         alt={shoe.name}
       />
+      <h3 className="text-xl font-semibold text-gray-800 p-4">{shoe.name}</h3>
       <div className="flex justify-between items-center p-1">
         <p>
           <span className="text-2xl font-medium">$</span> {shoe.price}/-

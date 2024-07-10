@@ -59,9 +59,9 @@ function Items({ item }) {
     dispatch(updateCart({ name: item.name, quantity: 1 }));
   };
   return (
-    <div className="cart-item flex items-center bg-white shadow-md rounded-lg p-4">
+    <div className="cart-item flex items-center bg-white shadow-md rounded-lg p-3">
       <img
-        className="w-24 h-24 object-cover rounded mr-4"
+        className="w-20  h-20 object-cover rounded"
         src={item.image}
         alt={item.name}
       />
